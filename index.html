@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Body Bcn</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+
+		<link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" media="only screen and (max-width: 768px)" href="estilos.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZXJBVDf7R4JqmSpopVPoduIGWx1IwpBM"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+
+	</head>
+	<body>
+
+    <!-- MAIN CONTENT -->
+
+   <div class="container-fluid">
+
+    <!-- HEADER -->
+
+    <section id="header">
+
+      <!-- NAVIGATION -->
+      <nav class="navbar navbar-fixed-top navbar-default bottom">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#header">BodyBCN ~ Dance & Movement</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="pilates.html" style="font-size: 15px;">Pilates</a></li>
+              <li><a href="timetables.html" style="font-size: 15px;">Timetable&Pricing</a></li>
+              <li><a href="#contact" style="font-size: 15px;">Contact us</a></li>
+            </ul>
+          </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container -->
+      </nav>
+
+      <!-- SLIDER -->
+      <div class="header-slide">
+        <section>
+          <div id="loader" class="pageload-overlay" data-opening="M 0,0 0,60 80,60 80,0 z M 80,0 40,30 0,60 40,30 z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
+              <path d="M 0,0 0,60 80,60 80,0 Z M 80,0 80,60 0,60 0,0 Z"/>
+            </svg>
+          </div> <!-- /.pageload-overlay -->
+          
+          <div class="image-slide bg-fixed">
+            <div class="overlay">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="slider-content">
+                      <h1></h1>
+                    </div>
+                  </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+              </div> <!-- /.container -->
+            </div> <!-- /.overlay -->
+          </div> <!-- /.image-slide -->
+        </section>
+
+        <script type="text/javascript">
+        var dataHeader = [
+                            {
+                              bigImage :"images/acostada_vff.jpg",
+                             
+                            },
+                            {
+                              bigImage :"images/pilates.jpg",
+                              
+                            }
+                        ],
+            loaderSVG = new SVGLoader(document.getElementById('loader'), {speedIn : 0, speedOut : 0, easingIn : mina.easingIn});
+            loaderSVG.show()
+        </script>
+      </div><!-- /.header-slide -->
+    </section>
+
+    <!-- HEADER END -->
+
+      <!-- ABOUT -->
+
+    <section id="about" class="light">
+      <header class="title">
+        <h2>Dance & Pilates Studio</h2>
+       
+      </header>
+
+      <div class="container">
+        <div class="row table-row">
+          <div class="col-sm-6 hidden-xs">
+            <div class="section-content">
+              <div class="big-image" style="background-image:url(images/FotoJet.jpg)"></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-detail">
+                  <h4>About us</h4>
+                  <p>Body BCN is a space in which we offer you different disciplines to be able to work your body in a healthy and healthy way.</p>
+                </div>
+              </div>
+
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-detail">
+                  <h4>What we offer</h4>
+                  <p>We offer classes of different types of dance to disciplines such as Yoga or Pilates so that you can choose the one that best suits your way of being and personal options.</p>
+                </div>
+              </div>
+
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-detail">
+                  <h4>We adapt to you</h4>
+                  <p>Our classes are in the morning and afternoon so you can choose the moment in which you want to dedicate that time so necessary for your body.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.row table-row -->
+      </div> <!-- /.container -->
+    </section>
+	
+	
+	    <!-- PORTFOLIO -->
+
+    <section id="portfolio" class="light">
+      <header class="title">
+        <h2>Our services</h2>
+        <p>We offer different dance styles at varying levels and include many preferences and experience levels</p>
+      </header>
+
+      <div class="container-fluid">
+        <div class="row">
+          <ul id="filters" class="list-inline">
+            <li data-filter=".branding" class="filter">Dance styles</li> 
+          </ul>
+        </div>
+
+        <div class="row">
+          <div class="container-portfolio">
+            <!-- PORTFOLIO OBJECT -->
+            <script type="text/javascript">
+            var portfolio = [
+                    {
+                      category : "branding",
+                      image : "images/bellydance.jpg",
+                      title : "Bellydance",
+                      link : "belly.html",
+                      text : ""
+                    },
+                    {
+                      category : "branding",
+                      image : "images/tribalvf.jpg",
+                      title : "Tribal",
+                      link : "tribal.html",
+                      text : ""
+                    },
+                    {
+                      category : "branding",
+                      image : "images/contempovff.jpg",
+                      title : "Contemporary",
+                      link : "contemporary.html",
+                      text : ""
+                    },
+                    {
+                      category : "branding",
+                      image : "images/pilates.jpg",
+                      title : "Pilates",
+                      link : "pilates.html",
+                      text : ""
+                    },
+                ];
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- TEAM -->
+
+    <section id="team" class="light">
+      <header class="title">
+        <h2>Our teachers</span></h2>
+        <p>BodyBCN is made up of a team of experienced teaching professionals who love their jobs. In any of the activities proposed by BODYBCN, the teachers will accompany you on your way of learning, overcoming and improving on a technical and artistic level.</p>
+      </header>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown">
+              <div class="img-team">
+                <img src="images/ayselcuatro.jpg" alt="" class="img-circle">
+              </div>
+                  <h3>Aysel</h3>
+                  <h5>Bellydance</h5>
+                    <p>Aysel is the academy director and teacher of Pilates, Oriental Dance, Gypsy, Burlesque, and Poi Dance.She has trained with dancers such as Norma Ros, Lesya Starr, Lena Nouar, Óscar Flores, Rachida Arrahat, Álika ... and currently belongs to the "Óscar Flores Troupe". Since 2009 she has been working as a teacher and dancer.</p>
+              <div class="team-social">
+            </div>                
+          </div>
+        </div>
+
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown"> 
+              <div class="img-team">
+                <img src="images/alexis.jpg" alt="" class="img-circle">
+              </div>
+              <h3>Alexis Sulbarán</h3>
+              <h5>Contemporary</h5>
+              <p>Graduate in Contemporary Dance from Unearte. He studied with the teacher Rumen Rachev in the Ballet of the Americas. Obtains a scholarship to the National Ballet School of Cuba. He has worked with recognized companies: Dramo, SieteOcho, Free Agent, El Eco de Los Ciruelos National Theater Company.</p>
+
+              <div class="team-social">
+                <!--<ul class="list-inline social-list">
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-google-plus"></a></li>
+                </ul>-->
+              </div>                
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown"> 
+              <div class="img-team">
+                <img src="images/martaeresuno.jpg" alt="" class="img-circle">
+              </div>
+
+              <h3>Marta Eres</h3>
+              <h5>Tribal</h5>
+
+              <p>Marta is a performer in her beginnings, she studied rhythmic gymnastics, classical oriental dances and folklores until she reached ATS and tribal fusion. She also traveled through other dances such as flamenco, hip hop or ballet, dances that inspire her and help shape her style. Creator of Integral Dance for Tribal Fusión®, 2013</p>
+
+              <div class="team-social">
+                <!--<ul class="list-inline social-list">
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-google-plus"></a></li>
+                </ul> -->
+              </div>                
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown"> 
+              <div class="img-team">
+                <img src="images/martapilates.jpg" alt="" class="img-circle">
+              </div>
+
+              <h3>Marta Sánchez</h3>
+              <h5>Pilates</h5>
+
+              <p>Aysel is part of the registry of sports professionals with number 010974, being also a Pilates instructor, specialized in pre and post natal, high performance, rheumatoid diseases and the elderly, as well as a degree in Nutrition and Sports Nutrition. His sports training also includes fitness (aerobics, stretching, toning ...)</p>
+
+              <div class="team-social">
+                <!--<ul class="list-inline social-list">
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-google-plus"></a></li>
+                </ul>-->
+              </div>               
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.container -->
+    </section>
+	
+	    
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FOOTER CONTACT -->
+
+     <section id="contact" class="dark">
+      <header class="title">
+        <h2>Contact <span>Us</span></h2>
+        
+      </header>
+
+      <form method="post" action="sendmail.php">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 animated" data-animate="fadeInLeft">
+              <form action="#">
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" name="from" class="form-control" placeholder="Your Email">
+                  </div>
+                  <div class="col-md-12">
+                    <textarea name="message" class="form-control" rows="3" placeholder="Tell Us Everything"></textarea>
+                  </div>
+                  <div class="col-md-12">
+                    <button class="btn btn-default submit">Send Message</button>
+                  </div>
+                  <div class="col-md-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.5417031737907!2d2.1618485149732494!3d41.40575820281994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2bf4d8f3649%3A0x848a2c6f2ccee836!2sBody%20BCN!5e0!3m2!1ses!2ses!4v1622660991640!5m2!1ses!2ses" width="1050" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-4 animated" data-animate="fadeInRight">
+              <address>
+                  <span><i class="fa fa-map-marker fa-lg"></i>C/ Joaquim Ruyra nº 5, Barcelona</span>
+                  <span><i class="fa fa-phone fa-lg"></i>667756972</span>
+                  <span><i class="fa fa-envelope-o fa-lg"></i>info@bodybcn.com</a></span>
+                  <span><i class="fa fa-facebook"></i><a href= 'https://www.facebook.com/profile.php?id=1539510501'>BodyBcn-Danzarabic</a></span>
+                  <span><i class="fa fa-instagram"></i><a href= 'https://www.instagram.com/bodybcn_danzarabic/'>BodyBcn-Danzarabic</a></span>
+              </address>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+    
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            
+            <p><small>© 2018 Body BCN estudio de Danza, Pilates y Yoga</small></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   </div><!-- /.container-fluid -->
+    
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+          $(document).ready(function(){
+            $('.carousel').carousel();
+          });
+    </script>
+  </body>
+</html>
