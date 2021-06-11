@@ -205,14 +205,7 @@ var SliderStatus = true;
 	    }, {
 	        accY: -150
 	    });
-
-	    $(".skill-bar .percentage").appear(function() {
-	        var element = $(this),
-	        	animation = element.data("value");
-	        element.animate({
-	        	"width" : animation
-	        }, 2000);
-	    });
+	  
 	});
 
 
